@@ -72,7 +72,7 @@ VAULT_DIR="<path to your vault>";
 You have to confugure the `package.json`.<br/>Default configuration is as
 follows:
 
-```json
+```jsonc
 {
   "name": null,
   "version": null,
