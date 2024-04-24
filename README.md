@@ -25,13 +25,7 @@ building, deploying, and managing the plugin lifecycle.
 To use this template, clone the repository to your local machine:
 
 ```bash
-git clone [URL_TO_REPOSITORY]
-```
-
-Navigate to the cloned directory:
-
-```bash
-cd [CLONED_DIRECTORY]
+gh repo create [REPO_NAME] --template=bitBeater/obsidian_plugin_template
 ```
 
 ## Usage
