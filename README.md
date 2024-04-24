@@ -83,7 +83,12 @@ follows:
     "email": null,
     "url": null
   },
-  ...
+  "manifest": {
+    "minAppVersion": null,
+    "isDesktopOnly": null
+  }
+  //...
+}
 ```
 
 ## Building the Plugin
@@ -119,5 +124,86 @@ generated from the `package.json` file.<br/>Here is the mapping between:
   "author": "packageJson.author.name",
   "authorUrl": "packageJson.author?.url",
   "fundingUrl": "packageJson.funding.url"
+}
+```
+
+example:
+
+```json
+// package.json
+{
+  "name": "My Plugin",
+  "version": "1.0.0",
+  "description": "Obsidian plugin description",
+  "author": {
+    "name": "John Doe",
+    "url": "https://johndoe.com"
+  },
+  "funding": {
+    "url": "https://jonhdoe.com/give-me-money"
+  },
+  "manifest": {
+    "minAppVersion": "0.12.0",
+    "isDesktopOnly": true
+  }
+}
+
+
+
+// manifest.json
+{
+  "id": "John_Doe@My_Plugin",
+  "name": "My Plugin",
+  "version": "0.0.12",
+  "description": "Obsidian plugin description",
+  "author": "John Doe",
+  "authorUrl": "https://johndoe.com",
+  "fundingUrl": "https://jonhdoe.com/give-me-money",
+  "minAppVersion": "0.12.0",
+  "isDesktopOnly": true
+}
+```
+
+---
+
+### Customize Manifest generation
+
+if a manifest field is set in the `package.json`'s `manifest` section, it will
+overwrite the generated value.<br/> For example if you want to set a custom
+`manifest` `id` field:
+
+```json
+// package.json
+{
+  "name": "My Plugin",
+  "version": "1.0.0",
+  "description": "Obsidian plugin description",
+  "author": {
+    "name": "John Doe",
+    "url": "https://johndoe.com"
+  },
+  "funding": {
+    "url": "https://jonhdoe.com/give-me-money"
+  },
+  "manifest": {
+    "id": "pluginId",
+    "minAppVersion": "0.12.0",
+    "isDesktopOnly": true
+  }
+}
+
+
+
+// manifest.json
+{
+  "id": "pluginId",
+  "name": "My Plugin",
+  "version": "0.0.12",
+  "description": "Obsidian plugin description",
+  "author": "John Doe",
+  "authorUrl": "https://johndoe.com",
+  "fundingUrl": "https://jonhdoe.com/give-me-money",
+  "minAppVersion": "0.12.0",
+  "isDesktopOnly": true
 }
 ```

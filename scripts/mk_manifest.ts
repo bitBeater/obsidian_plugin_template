@@ -9,15 +9,14 @@ const manifeStep = new log.Logger({ logLevel: log.LogLevel.INFO }).step('[MK_MAN
 
 const author = (packageJson?.author?.name || packageJson?.author) as string;
 const manifest = {
-    id: `${author?.replaceAll?.(/\s+/g, '_')}@${packageJson?.name}`,
-    minAppVersion: packageJson?.manifest?.minAppVersion,
-    isDesktopOnly: packageJson?.manifest?.isDesktopOnly,
+    id: `${author}@${packageJson?.name}`.replaceAll?.(/\s+/g, '_'),
     name: packageJson?.name,
     version: packageJson?.version,
     description: packageJson?.description,
     author: packageJson?.author?.name || packageJson?.author,
     authorUrl: packageJson?.author?.url,
     fundingUrl: packageJson?.funding?.url,
+    ...packageJson.manifest,
 }
 
 
