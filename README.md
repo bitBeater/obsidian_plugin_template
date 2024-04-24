@@ -9,10 +9,10 @@ building, deploying, and managing the plugin lifecycle.
 ## Table of Contents
 
 - [Installation](#installation)
+- [Dependencies](#dependencies)
 - [Usage](#usage)
 - [Features](#features)
 - [Configuration](#configuration)
-- [Dependencies](#dependencies)
 - [Building the Plugin](#building-the-plugin)
 - [Deploying the Plugin](#deploying-the-plugin)
 - [Manifest generation](#manifest-generation)
@@ -27,6 +27,19 @@ To use this template, clone the repository to your local machine:
 ```bash
 gh repo create [REPO_NAME] --template=bitBeater/obsidian_plugin_template
 ```
+
+## Dependencies
+
+### Deno
+
+To run the scripts, you need to have **Deno** installed on your machine. You can
+install Deno using the following command:
+
+```bash
+curl -fsSL https://deno.land/install.sh | sh
+```
+
+[or chose another installation method](https://docs.deno.com/runtime/manual/getting_started/installation)
 
 ## Usage
 
@@ -70,11 +83,6 @@ You have to confugure the `package.json`. Default configuration is as follows:
   },
   ...
 ```
-
-## Dependencies
-
-List all dependencies here, and provide instructions for installation if
-necessary.
 
 ## Building the Plugin
 
