@@ -129,7 +129,7 @@ generated from the `package.json` file.<br/>Here is the mapping between:
 
 example:
 
-```json
+```jsonc
 // package.json
 {
   "name": "My Plugin",
@@ -172,7 +172,7 @@ if a manifest field is set in the `package.json`'s `manifest` section, it will
 overwrite the generated value.<br/> For example if you want to set a custom
 `manifest` `id` field:
 
-```json
+```jsonc
 // package.json
 {
   "name": "My Plugin",
