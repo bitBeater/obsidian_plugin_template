@@ -105,7 +105,8 @@ npm run deploy
 ## Manifest generation
 
 The manifest file is crucial for Obsidian to recognize and use the plugin. It is
-generated from the `package.json` file. Here is a sample manifest snippet:
+generated from the `package.json` file. Here is an example of the mapping
+between:
 
 ```json
 {
