@@ -1,8 +1,3 @@
-Based on the information provided about your Obsidian plugin project template, I
-will generate a README file in Markdown format that includes all the necessary
-sections to help users understand and use your plugin. If there are specific
-details you'd like to add or modify, please let me know.
-
 # Obsidian Plugin Template
 
 ## Introduction
