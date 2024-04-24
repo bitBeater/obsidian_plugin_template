@@ -6,6 +6,8 @@ This project is a template for creating plugins for Obsidian, a popular
 note-taking and knowledge management application. It includes scripts for
 building, deploying, and managing the plugin lifecycle.
 
+[Obsidian plugin development guide](https://docs.obsidian.md/Plugins/Getting+started/Build+a+plugin)
+
 ## Table of Contents
 
 - [Installation](#installation)
@@ -59,11 +61,10 @@ the provided scripts to build and deploy your plugin.
 
 ### Setting the Obsidian Plugin Directory
 
-Configure the deployment directory in the `scripts/deploy.ts` file:
+Configure the deployment directory in the `.env` file:
 
-```typescript
-const DEPLOY_DIR =
-  "C:/Users/username/your_vault_name/.obsidian/plugins/your_plugin_name";
+```sh
+VAULT_DIR="<path to your vault name>/";
 ```
 
 ### Setting the package.json File
