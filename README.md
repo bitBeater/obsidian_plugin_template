@@ -69,7 +69,8 @@ VAULT_DIR="<path to your vault>";
 
 ### Setting the package.json File
 
-You have to confugure the `package.json`. Default configuration is as follows:
+You have to confugure the `package.json`.<br/>Default configuration is as
+follows:
 
 ```json
 {
@@ -95,8 +96,8 @@ npm run build
 
 ## Deploying the Plugin
 
-Before deploying, ensure the `DEPLOY_DIR` in `scripts/deploy.ts` is set to your
-Obsidian plugin directory. To deploy the plugin, run:
+Before deploying, ensure the `VAULT_DIR` in `.env` is set to your Obsidian
+vault.<br/>To deploy the plugin, run:
 
 ```bash
 npm run deploy
@@ -105,8 +106,7 @@ npm run deploy
 ## Manifest generation
 
 The manifest file is crucial for Obsidian to recognize and use the plugin. It is
-generated from the `package.json` file. Here is an example of the mapping
-between:
+generated from the `package.json` file.<br/>Here is the mapping between:
 
 ```json
 {
