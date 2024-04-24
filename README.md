@@ -64,7 +64,7 @@ the provided scripts to build and deploy your plugin.
 Configure the deployment directory in the `.env` file:
 
 ```sh
-VAULT_DIR="<path to your vault name>/";
+VAULT_DIR="<path to your vault>";
 ```
 
 ### Setting the package.json File
